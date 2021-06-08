@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Amsterdam Four";
+  src: url(../fonts/AmsterdamFour_ttf.eot) format("embedded-opentype"),
+    url(../fonts/AmsterdamFour_ttf.eot) format("embedded-opentype"),
+    url(../fonts/AmsterdamFour_ttf.woff2) format("woff2"),
+    url(../fonts/AmsterdamFour_ttf.woff) format("woff"),
+    url(../fonts/AmsterdamFour_ttf.ttf) format("truetype"),
+    url(../fonts/AmsterdamFour_ttf.otf) format("otf"),
+    url(../fonts/AmsterdamFour_ttf.svg) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: U+0020-00FE;
+}

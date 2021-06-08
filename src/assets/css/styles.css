@@ -1,0 +1,47 @@
+/*
+    === Import font ===
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import "Amsterdam_font.css";
+
+/*
+    === Inicio Reset ===
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input,
+input:focus,
+button,
+button:focus {
+  outline: 0;
+}
+
+image {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  font-size: 62.5%;
+}
+
+/*
+    === Fim Reset ===
+*/
+
+/* ===  Utils  === */
+.shadow {
+  box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.51);
+}
+
+/* === Inicio Login Page === */
+@import "login.css";

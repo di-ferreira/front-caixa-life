@@ -1,7 +1,7 @@
-import "./App.css";
+import Routes from "./routes";
 
 function App() {
-  return <h1>Caixa Life</h1>;
+  return <Routes />;
 }
 
 export default App;

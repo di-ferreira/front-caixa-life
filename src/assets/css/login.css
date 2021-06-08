@@ -1,0 +1,137 @@
+.life__login__bg {
+  background-image: url(../arvore_life.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.life__card__login {
+  color: #fff !important;
+  width: 22rem;
+  height: 20rem;
+  display: flex;
+  background: inherit;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.life__card__login * {
+  position: relative;
+}
+
+.life__card__login:before {
+  content: "";
+  z-index: 0;
+  width: 22rem;
+  height: 20rem;
+  background: inherit;
+  position: absolute;
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.05);
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+.life__card__logo {
+  width: 7rem;
+  height: 7rem;
+  font-size: 75px;
+  position: absolute;
+  top: -65px;
+  left: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Amsterdam Four" !important;
+}
+
+.life__card__title {
+  font-size: 1.8rem;
+  margin: 5rem 0 0.1rem 0;
+}
+
+.life__sing__up__link,
+.life__btn__login,
+.life__form__control {
+  display: flex;
+  align-items: center;
+  border: solid #ffffff 2px;
+  width: 16rem;
+  height: 2rem;
+  margin: 0.25rem 0;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 2.5rem;
+  -webkit-border-radius: 2.5rem;
+  -moz-border-radius: 2.5rem;
+  -ms-border-radius: 2.5rem;
+  -o-border-radius: 2.5rem;
+}
+
+.life__form__control input[type="text"]:-webkit-autofill,
+.life__form__control input[type="text"],
+.life__form__control input[type="password"]:-webkit-autofill,
+.life__form__control input[type="password"] {
+  color: #ffffff;
+  flex: 2;
+  background: none;
+  border: none;
+  margin-left: 5px;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.life__btn__login {
+  font-size: 1.1rem;
+  align-items: center !important;
+  justify-content: center;
+  margin-top: 0.5rem;
+  padding: 0;
+  background-color: #2fed42;
+  border-color: #2fed42;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+}
+
+.life__btn__login:hover {
+  background-color: #4cc558;
+  border-color: #4cc558;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+}
+
+.life__show__password {
+  cursor: pointer;
+}
+
+.life__sing__up__link {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+
+.life__sing__up__link a {
+  color: #2fed42;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.life__sing__up__link a:hover {
+  text-decoration: underline;
+}
