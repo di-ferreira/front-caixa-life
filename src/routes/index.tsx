@@ -1,13 +1,19 @@
 import React from "react";
 import { BrowserRouter, Switch } from "react-router-dom";
+import Dashboard from "../pages/Dashboard";
+import ListRegisters from "../pages/ListRegisters";
 import Login from "../pages/Login";
+import UserRegister from "../pages/UserRegister";
 import CustomRoute from "./Route";
 
 const Routes: React.FC = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <CustomRoute path="/" exact component={Login} />
+        <CustomRoute path="/" exact component={Dashboard} />
+        <CustomRoute path="/users/new" component={UserRegister} />
+        <CustomRoute path="/registers" component={ListRegisters} />
+        <CustomRoute path="/login" component={Login} />
       </Switch>
     </BrowserRouter>
   );
