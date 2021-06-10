@@ -3,6 +3,17 @@
 */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 @import "Amsterdam_font.css";
+@import "animations.css";
+
+/*
+    === Variaveis ===
+*/
+:root {
+  --primary-color: #2fed42;
+  --primary-color-hover: #4cc558;
+  --white: #fff;
+  --black-rgba: rgba(0, 0, 0, 0.5);
+}
 
 /*
     === Inicio Reset ===
@@ -38,9 +49,9 @@ body {
 
 /* ===  Utils  === */
 .shadow {
-  box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.51);
-  -webkit-box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.51);
-  -moz-box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.51);
+  box-shadow: 1px 5px 5px 0px var(--black-rgba);
+  -webkit-box-shadow: 1px 5px 5px 0px var(--black-rgba);
+  -moz-box-shadow: 1px 5px 5px 0px var(--black-rgba);
 }
 
 /* === Inicio Login Page === */

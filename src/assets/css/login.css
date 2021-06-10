@@ -10,11 +10,12 @@
 }
 
 .life__card__login {
-  color: #fff !important;
+  color: var(--white) !important;
   width: 22rem;
   height: 20rem;
   display: flex;
   background: inherit;
+  background-size: 75rem;
   flex-direction: column;
   align-items: center;
   position: relative;
@@ -59,12 +60,11 @@
   margin: 5rem 0 0.1rem 0;
 }
 
-.life__sing__up__link,
 .life__btn__login,
 .life__form__control {
   display: flex;
   align-items: center;
-  border: solid #ffffff 2px;
+  border: solid var(--white) 2px;
   width: 16rem;
   height: 2rem;
   margin: 0.25rem 0;
@@ -76,16 +76,20 @@
   -o-border-radius: 2.5rem;
 }
 
-.life__form__control input[type="text"]:-webkit-autofill,
-.life__form__control input[type="text"],
-.life__form__control input[type="password"]:-webkit-autofill,
-.life__form__control input[type="password"] {
-  color: #ffffff;
+.life__form__control input:-webkit-autofill,
+.life__form__control input:-webkit-autofill:active,
+.life__form__control input:-webkit-autofill:hover,
+.life__form__control input:-webkit-autofill:focus,
+.life__form__control input {
+  color: var(--white);
   flex: 2;
-  background: none;
+  background: none !important;
   border: none;
   margin-left: 5px;
-  -webkit-text-fill-color: #ffffff !important;
+  -webkit-text-fill-color: var(--white) !important;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
 }
 
 .life__btn__login {
@@ -94,9 +98,9 @@
   justify-content: center;
   margin-top: 0.5rem;
   padding: 0;
-  background-color: #2fed42;
-  border-color: #2fed42;
-  color: #ffffff;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--white) fff;
   cursor: pointer;
   transition: all ease 0.3s;
   -webkit-transition: all ease 0.3s;
@@ -106,8 +110,8 @@
 }
 
 .life__btn__login:hover {
-  background-color: #4cc558;
-  border-color: #4cc558;
+  background-color: var(--primary-color-hover);
+  border-color: var(--primary-color-hover);
   transition: all ease 0.3s;
   -webkit-transition: all ease 0.3s;
   -moz-transition: all ease 0.3s;
@@ -117,21 +121,4 @@
 
 .life__show__password {
   cursor: pointer;
-}
-
-.life__sing__up__link {
-  font-size: 12px;
-  display: flex;
-  justify-content: space-between;
-  border: none;
-}
-
-.life__sing__up__link a {
-  color: #2fed42;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.life__sing__up__link a:hover {
-  text-decoration: underline;
 }

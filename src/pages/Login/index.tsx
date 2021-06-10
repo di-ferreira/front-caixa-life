@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
 import {
   faEye,
   faEyeSlash,
@@ -18,7 +17,7 @@ function Login() {
 
   return (
     <div className="life__login__bg">
-      <form className="life__card__login">
+      <form className="life__card__login fadeIn">
         <span id="logo" className="life__card__logo">
           Life
         </span>
@@ -75,11 +74,6 @@ function Login() {
           value="Log In"
           className="life__btn__login"
         />
-
-        <div className="life__sing__up__link">
-          <span>Don't have an account?</span>
-          <Link to="#">Sing Up</Link>
-        </div>
       </form>
     </div>
   );
