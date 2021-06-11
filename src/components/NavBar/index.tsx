@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 function NavBar() {
   return (
     <div className="life__navbar__Container">
-      <Link to="/" className="life__brand__Logo">
-        Life
-      </Link>
+      <h1 className="life__brand__Logo">
+        <Link to="/">Life</Link>
+      </h1>
       <ul className="life__navBar">
         <li className="life__navItem">
           <Link to="/" className="life__navLink">
