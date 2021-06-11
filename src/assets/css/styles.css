@@ -27,6 +27,8 @@
     === Fonts ===
   */
   --logo-font: "Amsterdam Four";
+  --Font-Awesome-Brands: "Font Awesome 5 Brands";
+  --Font-Awesome-Free: "Font Awesome 5 Free";
 }
 
 /*
@@ -39,11 +41,25 @@
   box-sizing: border-box;
 }
 
+select,
+select:focus,
 input,
 input:focus,
 button,
 button:focus {
   outline: 0;
+}
+select::-ms-expand {
+  display: none;
+}
+select {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
 }
 
 image {
@@ -69,6 +85,10 @@ body {
   -moz-box-shadow: 0px 2px 3px 0px var(--black-rgba);
 }
 
+.flex__column {
+  flex-direction: column;
+}
+
 /* ===  classes padrões  === */
 .life__container__screen {
   display: flex;
@@ -85,7 +105,7 @@ body {
   padding: 1rem;
   background-color: var(--gray-color);
 }
-.life__title__page {
+.life__page__title {
   width: 100%;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
@@ -95,6 +115,11 @@ body {
   border-left: solid 0.1rem;
   border-bottom: solid 0.1rem;
 }
+.life__page__content {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem 0 0 0;
+}
 
 /* === Imports de classes de páginas e components === */
 @import "login.css";
@@ -102,3 +127,5 @@ body {
 @import "navbar.css";
 @import "card.css";
 @import "dashboard.css";
+@import "register.css";
+@import "components.css";

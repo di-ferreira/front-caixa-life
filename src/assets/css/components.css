@@ -1,0 +1,59 @@
+.life__input input {
+  border: none;
+  color: var(--primary-color-hover);
+}
+.life__input,
+.life__select {
+  position: relative;
+  display: flex;
+  margin: 0 0.4rem;
+  border-bottom: 1px solid var(--primary-color);
+  cursor: pointer;
+  line-height: 1.1;
+}
+.life__select {
+  width: 5rem;
+}
+
+.life__select::before {
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+  content: "";
+  width: 0.8rem;
+  height: 0.5rem;
+  background-color: var(--primary-color);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+
+.life__select select,
+.life__input input[type="date"] {
+  width: 100%;
+  padding: 0 0.4rem;
+  color: var(--primary-color-hover);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.life__select select::-ms-expand {
+  display: none;
+}
+
+.life__input input[type="date"] {
+  width: 7rem;
+}
+
+.life__input input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.life__input input[type="date"]:before {
+  color: var(--primary-color);
+  background: none;
+  display: block;
+  font-family: var(--Font-Awesome-Free);
+  content: "\f133";
+  width: 15px;
+  height: 20px;
+  position: absolute;
+}

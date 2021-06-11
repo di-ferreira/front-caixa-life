@@ -6,8 +6,8 @@ function Dashboard() {
     <div className="life__container__screen">
       <NavBar />
       <div className="life__content">
-        <h1 className="life__title__page">Dashboard</h1>
-        <div className="life__dashboard__content">
+        <h1 className="life__page__title">Dashboard</h1>
+        <div className="life__page__content">
           <CardViewValues
             title="Entradas"
             valueCard="1.000,00"

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
-    <div className="life__navbar__Container">
+    <nav className="life__navbar__Container">
       <h1 className="life__brand__Logo">
         <Link to="/">Life</Link>
       </h1>
@@ -32,7 +32,7 @@ function NavBar() {
           </Link>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 }
 
