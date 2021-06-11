@@ -52,7 +52,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Amsterdam Four" !important;
+  font-family: var(--logo-font) !important;
 }
 
 .life__card__title {
