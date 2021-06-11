@@ -3,8 +3,6 @@
 */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 @import "Amsterdam_font.css";
-@import "animations.css";
-@import "navbar.css";
 
 /*
     === Variaveis ===
@@ -20,7 +18,10 @@
   --white: #fff;
   --black-rgba: rgba(0, 0, 0, 0.2);
   --dark-color: #14181d;
+  --gray-color: #fdfdfd;
   --red-color: #c43131;
+  --blue-color: #3182c4;
+  --yellow-color: #e7d31f;
 
   /*
     === Fonts ===
@@ -68,5 +69,36 @@ body {
   -moz-box-shadow: 0px 2px 3px 0px var(--black-rgba);
 }
 
-/* === Inicio Login Page === */
+/* ===  classes padrões  === */
+.life__container__screen {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.life__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding: 1rem;
+  background-color: var(--gray-color);
+}
+.life__title__page {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  border-left: solid 0.1rem;
+  border-bottom: solid 0.1rem;
+}
+
+/* === Imports de classes de páginas e components === */
 @import "login.css";
+@import "animations.css";
+@import "navbar.css";
+@import "card.css";
+@import "dashboard.css";

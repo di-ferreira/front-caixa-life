@@ -1,17 +1,27 @@
-import { ReactNode } from "react";
+import CardViewValues from "../../components/CardViewValues";
 import NavBar from "../../components/NavBar";
 
-interface DashboardProps {
-  children?: ReactNode;
-}
-
-function Dashboard({ children }: DashboardProps) {
+function Dashboard() {
   return (
-    <>
+    <div className="life__container__screen">
       <NavBar />
-      <h1>Dashboard</h1>
-      {children}
-    </>
+      <div className="life__content">
+        <h1 className="life__title__page">Dashboard</h1>
+        <div className="life__dashboard__content">
+          <CardViewValues
+            title="Entradas"
+            valueCard="1.000,00"
+            typeCard="entrada"
+          />
+          <CardViewValues title="Saídas" valueCard="500,00" typeCard="saida" />
+          <CardViewValues
+            title="Total Caixa"
+            valueCard="600,00"
+            typeCard="total"
+          />
+        </div>
+      </div>
+    </div>
   );
 }
 

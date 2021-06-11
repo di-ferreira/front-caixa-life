@@ -5,6 +5,7 @@
   height: 100vh;
   font-size: 0.8rem;
   background-color: var(--primary-color);
+  color: var(--white);
   align-items: center;
   padding: 1rem 0;
 }
@@ -40,6 +41,17 @@
   -o-border-radius: 50%;
 }
 
+.life__brand__title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 2.5rem;
+  line-height: 0.9rem;
+  font-size: 1rem;
+}
+
 .life__navBar {
   display: flex;
   flex-direction: column;
@@ -55,7 +67,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 3rem;
+  height: 2rem;
   align-items: center;
   cursor: pointer;
   transition: all ease 0.5s;

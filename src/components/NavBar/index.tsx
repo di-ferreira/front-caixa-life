@@ -6,6 +6,10 @@ function NavBar() {
       <h1 className="life__brand__Logo">
         <Link to="/">Life</Link>
       </h1>
+      <h2 className="life__brand__title">
+        Controle <br />
+        de Caixa
+      </h2>
       <ul className="life__navBar">
         <li className="life__navItem">
           <Link to="/" className="life__navLink">
