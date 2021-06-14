@@ -1,7 +1,44 @@
+.life__btn {
+  border: none;
+  color: var(--white);
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: all ease 0.5s;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+
+.life__btn:hover {
+  background-color: var(--primary-color-hover);
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+
+.life__btn.normal {
+  padding: 0.3rem 1.5rem;
+}
+.life__btn.small {
+  padding: 0.1rem 1rem;
+}
+.life__btn.large {
+  padding: 0.1rem 1rem;
+}
+
 .life__input input {
   border: none;
-  color: var(--primary-color-hover);
+  color: var(--dark);
 }
+
 .life__input,
 .life__select {
   position: relative;
@@ -44,16 +81,10 @@
   width: 7rem;
 }
 
-.life__input input[type="date"]::-webkit-calendar-picker-indicator {
-  display: none;
+.life__input .react-date-picker__wrapper {
+  border: none !important;
 }
-.life__input input[type="date"]:before {
-  color: var(--primary-color);
-  background: none;
-  display: block;
-  font-family: var(--Font-Awesome-Free);
-  content: "\f133";
-  width: 15px;
-  height: 20px;
-  position: absolute;
+
+.life__input .react-date-picker__calendar-button.react-date-picker__button {
+  color: var(--primary-color-hover);
 }
