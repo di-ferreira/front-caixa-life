@@ -1,5 +1,4 @@
-/* eslint-disable react/style-prop-object */
-import { IntlProvider, FormattedNumber } from "react-intl";
+import { formatCurrency, formatDate } from "../../utils/format";
 export interface IRegisterItem {
   id?: number;
   title: string;
@@ -10,22 +9,16 @@ export interface IRegisterItem {
 }
 
 function RegisterItem(Item: IRegisterItem) {
-  const messagesInFrench = {
-    myMessage: "Aujourd'hui, c'est le {ts, date, ::yyyyMMdd}",
-  };
-
   return (
-    <IntlProvider messages={messagesInFrench} locale="fr" defaultLocale="en">
+    <>
       <h1>{Item.title}</h1>
       <p>
-        <span>
-          <FormattedNumber value={Item.value} style="currency" currency="EUR" />
-        </span>
+        <span>{formatCurrency(Item.value)}</span>
         <span>{Item.inflows ? "Entrada" : "Saída"}</span>
-        <span>{Item.createDate}</span>
+        <span>{formatDate(Item.createDate)}</span>
         <span>{Item.userName}</span>
       </p>
-    </IntlProvider>
+    </>
   );
 }
 

@@ -16,7 +16,7 @@ function ListRegisters() {
         title: "Entrada 01",
         value: 25.6,
         inflows: true,
-        createDate: "25/06/2021",
+        createDate: "2021-06-25",
         userName: "Admin",
       },
       {
@@ -24,7 +24,7 @@ function ListRegisters() {
         title: "Saída 01",
         value: 50,
         inflows: false,
-        createDate: "15/06/2021",
+        createDate: "2021-06-15",
         userName: "Admin",
       },
       {
@@ -32,7 +32,7 @@ function ListRegisters() {
         title: "Entrada 02",
         value: 100.0,
         inflows: true,
-        createDate: "20/06/2021",
+        createDate: "2021/06/20",
         userName: "Admin",
       },
       {
@@ -40,7 +40,7 @@ function ListRegisters() {
         title: "Saída 02",
         value: 35.75,
         inflows: false,
-        createDate: "30/06/2021",
+        createDate: "2021/06/30",
         userName: "Admin",
       },
     ];

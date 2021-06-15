@@ -1,14 +1,18 @@
-import { format } from "date-fns";
+import { createIntl, createIntlCache } from "@formatjs/intl";
 
-export const round = (value: number, precision: number) => {
-  var multiplier = Math.pow(10, precision || 0);
-  return Math.round(value * multiplier) / multiplier;
+const cache = createIntlCache();
+
+const intl = createIntl({ locale: "pt-br", messages: {} }, cache);
+
+export const formatCurrency = (value: number) => {
+  return intl.formatNumber(value, { style: "currency", currency: "BRL" });
 };
 
-export const formatLocalDate = (date: string, pattern: string) => {
-  const dt = new Date(date);
-  const dtDateOnly = new Date(
-    dt.valueOf() + dt.getTimezoneOffset() * 60 * 1000
-  );
-  return format(dtDateOnly, pattern);
+export const formatDate = (date: string | number | Date) => {
+  let newDate: Date = new Date(date.toString());
+  return intl.formatDate(newDate, {
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+  });
 };
