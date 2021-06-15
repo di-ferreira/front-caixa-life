@@ -12,6 +12,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import RegisterItem from "../../components/RegisterItem";
+import Register from "../Register";
 
 function ListRegisters() {
   const [startDate, setStartDate] = useState(new Date());
@@ -57,6 +58,7 @@ function ListRegisters() {
 
   return (
     <div className="life__container__screen">
+      <Register isOpen={true} />
       <NavBar />
       <main className="life__content">
         <h1 className="life__page__title">Registros de Caixa</h1>
