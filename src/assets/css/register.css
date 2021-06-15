@@ -5,7 +5,112 @@
   font-size: 0.9rem;
   border-bottom: solid 1px var(--primary-color);
 }
+.life__register__searchbox .life__btn {
+  margin: 0 0.3rem;
+}
 
 .life__register__list {
   width: 100%;
+  margin-top: 0.5rem;
+  border-collapse: collapse;
+  border: solid 1px var(--primary-color);
+}
+
+.life__register__list thead,
+.life__register__list tr {
+  height: 2rem;
+}
+
+.life__register__item__title {
+  font-size: 0.8rem;
+  color: var(--primary-color);
+}
+
+.life__register__list th,
+.life__register__list td {
+  text-align: center;
+  padding: 0.25rem 0;
+  border-bottom: solid 1px var(--primary-color);
+}
+
+.life__register__list td.title {
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.life__register__list td.user {
+  text-transform: uppercase;
+}
+
+.life__register__list td.value {
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+.life__register__list td.open {
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: var(--primary-color);
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+
+.life__register__list td.open:hover {
+  color: var(--primary-color-hover);
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+
+.life__register__list span[data-type="entrada"],
+.life__register__list span[data-type="saida"] {
+  color: var(--white);
+  font-weight: bold;
+  padding: 2% 15%;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}
+
+.life__register__list span[data-type="entrada"] {
+  background-color: var(--blue-color);
+}
+
+.life__register__list span[data-type="saida"] {
+  background-color: var(--red-color);
+}
+
+.life__register__pagination {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 0 0.3rem;
+}
+
+.life__register__pagination .life__select {
+  width: 2.5rem;
+  margin-right: 0.8rem !important;
+}
+
+.life__register__pagination .life__select::before {
+  top: 0.1rem;
+}
+
+.life__register__pagination .life__btn {
+  padding: 0.5% 2%;
+  margin: 0 0.15rem;
+}
+
+.life__register__pagination .total_page,
+.life__register__pagination .current_page {
+  margin: 0.5rem;
+  text-decoration: underline;
 }

@@ -1,3 +1,5 @@
+import { faExternalLinkSquareAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { formatCurrency, formatDate } from "../../utils/format";
 export interface IRegisterItem {
   id?: number;
@@ -11,13 +13,20 @@ export interface IRegisterItem {
 function RegisterItem(Item: IRegisterItem) {
   return (
     <>
-      <h1>{Item.title}</h1>
-      <p>
-        <span>{formatCurrency(Item.value)}</span>
-        <span>{Item.inflows ? "Entrada" : "Saída"}</span>
-        <span>{formatDate(Item.createDate)}</span>
-        <span>{Item.userName}</span>
-      </p>
+      <td className="date">{formatDate(Item.createDate)}</td>
+      <td className="title">{Item.title}</td>
+      <td className="value">{formatCurrency(Item.value)}</td>
+      <td>
+        {Item.inflows ? (
+          <span data-type="entrada">Entrada</span>
+        ) : (
+          <span data-type="saida">Saída</span>
+        )}
+      </td>
+      <td className="user">{Item.userName}</td>
+      <td className="open">
+        <FontAwesomeIcon icon={faExternalLinkSquareAlt} />
+      </td>
     </>
   );
 }

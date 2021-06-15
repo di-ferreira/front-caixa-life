@@ -1,7 +1,15 @@
 import React, { useEffect, useState } from "react";
 import NavBar from "../../components/NavBar";
 import DatePicker from "react-date-picker";
-import { faSearch, faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
+import {
+  faSearch,
+  faCalendarAlt,
+  faAngleLeft,
+  faAngleDoubleLeft,
+  faAngleRight,
+  faAngleDoubleRight,
+  faPlus,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import RegisterItem from "../../components/RegisterItem";
 
@@ -83,10 +91,21 @@ function ListRegisters() {
             <button className="life__btn small">
               <FontAwesomeIcon icon={faSearch} />
             </button>
+            <button className="life__btn small">
+              <FontAwesomeIcon icon={faPlus} />
+            </button>
           </nav>
-          <ul className="life__register__list">
+          <table className="life__register__list">
+            <thead className="life__register__item__title">
+              <th>Data</th>
+              <th>Título</th>
+              <th>Valor</th>
+              <th>Tipo</th>
+              <th>Usuário</th>
+              <th>Ações</th>
+            </thead>
             {resgisters?.map((reg) => (
-              <li key={reg.id}>
+              <tr key={reg.id}>
                 <RegisterItem
                   title={reg.title}
                   createDate={reg.createDate}
@@ -94,9 +113,34 @@ function ListRegisters() {
                   userName={reg.userName}
                   value={reg.value}
                 />
-              </li>
+              </tr>
             ))}
-          </ul>
+          </table>
+          <div className="life__register__pagination">
+            <div className="life__select">
+              <select>
+                <option>15</option>
+                <option>25</option>
+                <option>50</option>
+                <option>100</option>
+              </select>
+            </div>
+            <button className="life__btn">
+              <FontAwesomeIcon icon={faAngleDoubleLeft} />
+            </button>
+            <button className="life__btn">
+              <FontAwesomeIcon icon={faAngleLeft} />
+            </button>
+            <span className="current_page">1</span>
+            de
+            <span className="total_page">50</span>
+            <button className="life__btn">
+              <FontAwesomeIcon icon={faAngleRight} />
+            </button>
+            <button className="life__btn">
+              <FontAwesomeIcon icon={faAngleDoubleRight} />
+            </button>
+          </div>
         </div>
       </main>
     </div>
