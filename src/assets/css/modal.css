@@ -10,6 +10,7 @@
 
 .life__modal_main {
   width: 25rem;
+  max-height: 15rem;
   margin: 10%;
   padding: 1rem;
   box-shadow: 0.1rem 0.2rem 0.3rem 0.1rem var(--black-rgba);
@@ -54,6 +55,10 @@
   margin: 0;
   color: var(--dark-color);
   -webkit-text-fill-color: var(--dark-color) !important;
+}
+
+.life__modal .life__form__control.row {
+  border: none;
 }
 
 .life__modal .life__form__control.row .life__form__label {

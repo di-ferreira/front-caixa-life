@@ -58,7 +58,7 @@ function ListRegisters() {
 
   return (
     <div className="life__container__screen">
-      <Register isOpen={true} />
+      <Register isOpen={false} />
       <NavBar />
       <main className="life__content">
         <h1 className="life__page__title">Registros de Caixa</h1>

@@ -97,6 +97,7 @@
 }
 
 .life__input__checkbox:before {
+  opacity: 0.5;
   align-items: center;
   content: "";
   position: absolute;
@@ -105,7 +106,8 @@
   top: -0.45rem;
   left: 0;
   cursor: pointer;
-  background-color: var(--primary-color-hover);
+  background-color: var(--white);
+  border: solid 1px var(--primary-color);
   border-radius: 2rem;
   -webkit-border-radius: 2rem;
   -moz-border-radius: 2rem;
@@ -119,23 +121,24 @@
 }
 
 .life__input__checkbox:after {
+  opacity: 0.5;
   content: "";
   width: 1.3rem;
   height: 1.3rem;
   position: absolute;
-  top: -0.27rem;
-  background-color: var(--white);
+  top: -0.225rem;
+  background-color: var(--primary-color);
   cursor: pointer;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  transform: translateX(2.5rem);
-  -webkit-transform: translateX(2.5rem);
-  -moz-transform: translateX(2.5rem);
-  -ms-transform: translateX(2.5rem);
-  -o-transform: translateX(2.5rem);
+  transform: translateX(0.3rem);
+  -webkit-transform: translateX(0.3rem);
+  -moz-transform: translateX(0.3rem);
+  -ms-transform: translateX(0.3rem);
+  -o-transform: translateX(0.3rem);
   transition: all ease 0.5s;
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
@@ -144,9 +147,9 @@
 }
 
 .life__input__checkbox:checked:before {
-  opacity: 0.5;
-  background-color: var(--white);
-  border: solid 1px var(--primary-color);
+  opacity: 1;
+  background-color: var(--primary-color);
+  border: none;
   transition: all ease 0.5s;
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
@@ -155,14 +158,14 @@
 }
 
 .life__input__checkbox:checked:after {
-  top: -0.225rem;
-  opacity: 0.5;
-  background-color: var(--primary-color);
-  transform: translateX(0.3rem);
-  -webkit-transform: translateX(0.3rem);
-  -moz-transform: translateX(0.3rem);
-  -ms-transform: translateX(0.3rem);
-  -o-transform: translateX(0.3rem);
+  opacity: 1;
+  top: -0.27rem;
+  background-color: var(--white);
+  transform: translateX(2.5rem);
+  -webkit-transform: translateX(2.5rem);
+  -moz-transform: translateX(2.5rem);
+  -ms-transform: translateX(2.5rem);
+  -o-transform: translateX(2.5rem);
   transition: all ease 0.5s;
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;

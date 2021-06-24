@@ -33,8 +33,12 @@ function Register({ isOpen }: RegisterProps) {
             </div>
 
             <div className="life__form__control row">
-              <label className="life__form__label">Saída</label>
-              <input type="checkbox" className="life__input__checkbox" />
+              <label className="life__form__label">Entrada</label>
+              <input
+                type="checkbox"
+                checked
+                className="life__input__checkbox"
+              />
             </div>
           </div>
         </section>
