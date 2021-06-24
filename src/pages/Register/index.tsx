@@ -16,7 +16,7 @@ function Register({ isOpen }: RegisterProps) {
               <FontAwesomeIcon icon={faDollarSign} />
               Título
             </label>
-            <input type="text" placeholder="Título" />
+            <input type="text" placeholder="Título" className="life__input" />
           </div>
 
           <div className="life__row">
@@ -25,12 +25,16 @@ function Register({ isOpen }: RegisterProps) {
                 <FontAwesomeIcon icon={faDollarSign} />
                 Valor (R$)
               </label>
-              <input type="number" placeholder="Valor" />
+              <input
+                type="number"
+                placeholder="Valor"
+                className="life__input"
+              />
             </div>
 
-            <div className="life__form__control">
-              <input type="checkbox" />
+            <div className="life__form__control row">
               <label className="life__form__label">Saída</label>
+              <input type="checkbox" className="life__input__checkbox" />
             </div>
           </div>
         </section>

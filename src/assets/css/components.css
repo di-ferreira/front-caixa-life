@@ -88,3 +88,84 @@
 .life__input .react-date-picker__calendar-button.react-date-picker__button {
   color: var(--primary-color-hover);
 }
+
+.life__input__checkbox {
+  appearance: none;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+
+.life__input__checkbox:before {
+  align-items: center;
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 1.7rem;
+  top: -0.45rem;
+  left: 0;
+  cursor: pointer;
+  background-color: var(--primary-color-hover);
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+
+.life__input__checkbox:after {
+  content: "";
+  width: 1.3rem;
+  height: 1.3rem;
+  position: absolute;
+  top: -0.27rem;
+  background-color: var(--white);
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: translateX(2.5rem);
+  -webkit-transform: translateX(2.5rem);
+  -moz-transform: translateX(2.5rem);
+  -ms-transform: translateX(2.5rem);
+  -o-transform: translateX(2.5rem);
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+
+.life__input__checkbox:checked:before {
+  opacity: 0.5;
+  background-color: var(--white);
+  border: solid 1px var(--primary-color);
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
+
+.life__input__checkbox:checked:after {
+  top: -0.225rem;
+  opacity: 0.5;
+  background-color: var(--primary-color);
+  transform: translateX(0.3rem);
+  -webkit-transform: translateX(0.3rem);
+  -moz-transform: translateX(0.3rem);
+  -ms-transform: translateX(0.3rem);
+  -o-transform: translateX(0.3rem);
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+}
