@@ -11,7 +11,7 @@ const Routes: React.FC = () => {
     <BrowserRouter>
       <Switch>
         <CustomRoute path="/" exact component={Dashboard} />
-        <CustomRoute path="/users/new" component={UserRegister} />
+        <CustomRoute path="/users" component={UserRegister} />
         <CustomRoute path="/registers" component={ListRegisters} />
         <CustomRoute path="/login" component={Login} />
       </Switch>

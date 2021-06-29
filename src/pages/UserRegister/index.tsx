@@ -1,15 +1,15 @@
-import { ReactNode } from "react";
+import NavBar from "../../components/NavBar/index";
+import UserList from "../../components/UserList";
 
-interface UserRegisterProps {
-  children?: ReactNode;
-}
-
-function UserRegister({ children }: UserRegisterProps) {
+function UserRegister() {
   return (
-    <>
-      <h1>UserRegister</h1>
-      {children}
-    </>
+    <div className="life__container__screen">
+      <NavBar />
+      <div className="life__content">
+        <h1 className="life__page__title">Usuários</h1>
+        <UserList />
+      </div>
+    </div>
   );
 }
 

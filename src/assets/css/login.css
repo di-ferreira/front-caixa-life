@@ -55,9 +55,9 @@
   font-family: var(--logo-font) !important;
 }
 
-.life__card__title {
+.life__card__login .life__card__title {
   font-size: 1.8rem;
-  margin: 5rem 0 0.1rem 0;
+  margin: 5rem 0 0.1rem 0 !important;
 }
 
 .life__btn__login,
